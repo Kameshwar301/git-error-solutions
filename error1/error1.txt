@@ -1,1 +1,47 @@
+E:\KR-Final-Project>git push
+To https://github.com/Kameshwar301/KR-Final-Project.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Kameshwar301/KR-Final-Project.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushinghint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+------------------------******************-----------------------
+E:\KR-Final-Project>git remote -v
+origin  https://github.com/Kameshwar301/KR-Final-Project.git (fetch)
+origin  https://github.com/Kameshwar301/KR-Final-Project.git (push)
 
+E:\KR-Final-Project>git push
+To https://github.com/Kameshwar301/KR-Final-Project.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Kameshwar301/KR-Final-Project.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushinghint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E:\KR-Final-Project>git fetch origin main:tmp
+remote: Enumerating objects: 58, done.
+remote: Counting objects: 100% (58/58), done.
+remote: Compressing objects: 100% (48/48), done.
+remote: Total 57 (delta 6), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (57/57), 10.68 MiB | 1.52 MiB/s, done.
+From https://github.com/Kameshwar301/KR-Final-Project
+ * [new branch]      main       -> tmp
+   30d08de..8ff730e  main       -> origin/main
+
+E:\KR-Final-Project>git rebase tmp
+Successfully rebased and updated refs/heads/main.
+
+E:\KR-Final-Project>git push
+Enumerating objects: 708, done.
+Counting objects: 100% (708/708), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (664/664), done.
+Writing objects: 100% (707/707), 937.51 KiB | 4.26 MiB/s, done.
+Total 707 (delta 104), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (104/104), done.
+To https://github.com/Kameshwar301/KR-Final-Project.git
+   8ff730e..a150112  main -> main
+
+E:\KR-Final-Project>
